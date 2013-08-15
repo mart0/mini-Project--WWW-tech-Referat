@@ -1,0 +1,3 @@
+﻿function sample() {
+    alert('Hello!')
+}

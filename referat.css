@@ -1,0 +1,66 @@
+body
+{
+font-family: sans-serif, Arial;
+background-image:url(img/22_01_bckgr.jpg);
+background-repeat: repeat;
+}
+h1 {
+    text-align:center;
+    font-size: 40px;
+    color:aqua;
+    font-family:Cooper;
+}
+hr {
+    width: 100%;
+    border: 2px outset;
+    color: aqua;
+}
+#wrapper {
+    width: 100%;
+    
+}
+h2 {
+    color: aqua;
+    text-align:center;
+    font-size: 30px;
+}
+h3 {
+    color: aqua;
+    text-align:center;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: aqua;
+}
+.menu {
+    width: 70%; 
+}
+.arrow {
+    width: 30%;
+    margin: -359px 20px 0 808px;
+}
+.click {
+    font-size: 30px;
+    text-align:center;
+}
+img {
+    margin: -17px 0px 3px 84px;
+}
+footer {
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+    text-align: center;
+    color: aqua;
+    margin-right: 118px;
+}
+.footer {
+    width: 1333px;
+    border: 2px outset;
+    color: aqua;
+    margin-top: 72px;
+}
+
+
+
+ 

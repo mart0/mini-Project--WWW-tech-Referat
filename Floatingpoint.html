@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Data Types And Variables</title>
+    <link href="template.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div id="wrapper">
+            <h1>Data Types And Variables in JavaScript</h1><hr class="firsthr" />
+        </div>
+    </header>
+        <div class="back">
+            <a href="Integer.html"><p>Back</p><img src="img/22_04_rsz_arrow-left.png" /></a>
+        </div>
+        <div class="next">
+            <a href="Boolean.html"><p>Next</p><img src="img/22_02_rsz_arrow-right.png" /></a>
+        </div>
+    <article>
+        <section>
+            <h2>3.2 Floating-point</h2>
+            <p>Репрезентира всички реални числа. Има диапазон на стойностите и прецизност и може да се държи необичайно* при някои сметки. JavaScript представя числата използвайки IEEE 754 стандарта за цифрена изобразяване. Това означава, че може да пишем големи числа като 1,79797x10308 и малки като 5x10-324. Размера на Floating-Point типа зависи от платформата – браузера и операционната система. 32-битовите операционни системи и браузъри имат 32 бита за число, докато 64-битовите имат 64 бита. Добра практика е да използваме до 32-битови числа, което ще ни гарантира, че ще фунционира на всички платнофми.</p>
+            <p>*-  Понякога при използването на floating-point типа, могат да се наблюдават някои анормални последици. Например, сравняването на числа от floating-point тип не може да стане директно чрез „==“ оператора:</p>
+            <p>Пример 8:<br />
+	            var a = 1.0;<br />
+	            var b = 0.33;<br />
+	            var sum = 1.33;<br />
+	            var equal = (a+b == sum) // False!<br />
+                console.log(“a+b = ”+ (a+b) + “, sum = “+ sum + “, sum == a+b? is “ + equal);<br />
+            </p>
+            <p>Като допълнение е нужно да се спомене, че в JavaScript се поддържат числа със специална стойност:</p>
+            <p>	<ul>
+                    <li>NaN (not a number) – Използва се, когато някоя математическа операция е изпълнена с неподходяща информация, като например стрингове.</li>
+                    <li>Positive infinity (+ безкрайност) – Използва се, когато някое положително число е прекалено голямо, за да се репрезентира от JavaScript.</li>
+                    <li>Negative infinity (- безкрайност) – Използва се, когато някое отрицателно число е прекалено голямо, за да се репрезентира от JavaScript.</li>
+                    <li>Positive and Negative 0. JavaScript прави разлиа между положителна и отрицателна 0.</li>
+                </ul>
+                
+               
+	           
+	           
+</p>
+        </section>
+    </article>
+        <p class="goup"><a href="#">Click Here And Fly Up Like A Bird!</a></p>
+    <footer>
+        
+        <div><hr class="footer" /> 
+            <p>Изготвил: Мартин М. Маринов, СИ, 61534</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

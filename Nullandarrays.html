@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Data Types And Variables</title>
+    <link href="template.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div id="wrapper">
+            <h1>Data Types And Variables in JavaScript</h1><hr class="firsthr" />
+        </div>
+    </header>
+        <div class="back">
+            <a href="String.html"><p>Back</p><img src="img/22_04_rsz_arrow-left.png" /></a>
+        </div>
+        <div class="next">
+            <a href="end.html"><p>Next</p><img src="img/22_02_rsz_arrow-right.png" /></a>
+        </div>
+    <article>
+        <section>
+            <h2>3.5,6 Null and arrays (масиви)</h2>
+            <h3>3.5 Null</h3>
+            <p>null типа данни в JavaScript има една единствена стойност – null. Ключовата дума null не може да бъде изпозлвана като име на променлива или име на функция. Променлива, която съдържа съдържа null е невалидна. Може да се изтрие съдържанието на променливата (без да се трие самата тя) като и се зададе null стойността.</p>
+            <p>Важно е да се уточни, че в JavaScript null не е същото като 9 (както е в С и в С++ например). Също, операторът <strong>type of</strong>  връща стойност null, като тип данни <strong>Object</strong>, а не като тип null.Ето как се инициализира null  типове данни:</p>
+            <p><a href="resources/example12/nullEx.html">Пример 12: (click here)</a><br /><br />
+               person: null;<br />
+               cars: null;<br />
+            </p>
+            <h3>3.6 Arrays (масиви)</h3>
+            <p>Mасивите в JavaScript преставляват специална променлива, която може да съдържа повече от една стойност едновременно. Ако имаме списък от някакви елементи (имена например), сортирането на имената в една променлива ще изглежда така:</p>
+            <p><a href="resources/example13/arraysEx.html">Пример 13: (click here)</a><br /><br />
+                var i;<br />
+                var names = new Array();<br />
+                names[0] = "Martin";<br />
+                names [1] = "Gosho";<br />
+                names [2] = "Pesho";<br />
+                for (i=0;i< names.length;i++)<br />
+                {<br />
+                document.write(names [i] + "< br >");<br />
+                }<br />
+            </p>
+            <p>В този пример е използван така наречения регулярен (regular) начин за създаване на масив. Съществуват още два начина – кондензиран (condensed) и буквален (literal)Масивите са удобни за използване, когато имаме голям брой елементи и искаме да посочим някой от тях (чрез определен индекс),като в посочения пример използваме цикъл for за обхождане на масива.</p>
+            <p>Важно е да се уточни, че гореспоменатите индекси на масивите са нулево-базирани (zero-based), което означава, че първият елемент от масива има стойност [0], втория – [1], третия – [2] и т.н.</p>   
+        </section>
+    </article>
+        <p class="goup"><a href="#">Click Here And Fly Up Like A Bird!</a></p>
+    <footer>
+        <div><hr class="footer" /> 
+            <p>Изготвил: Мартин М. Маринов, СИ, 61534</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

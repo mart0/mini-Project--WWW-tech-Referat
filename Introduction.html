@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Data Types And Variables</title>
+    <link href="template.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div id="wrapper">
+            <h1>Data Types And Variables in JavaScript</h1><hr class="firsthr" />
+        </div>
+    </header>
+        <div class="back">
+            <a href="referat.html"><p>Back</p><img src="img/22_04_rsz_arrow-left.png" /></a>
+        </div>
+        <div class="next">
+            <a href="Variables.html"><p>Next</p><img src="img/22_02_rsz_arrow-right.png" /></a>
+        </div>
+    <article>
+        <section>
+            <h2>1. Кратко въведение</h2>
+                <p>JavaScript е най-широко разпространеният език за програмиране в интернет, след HTML . Въпреки че го наричат "език за програмиране", с негова помощ не се пишат програми, а скриптове, които се вмъкват в HTML документа. В този смисъл JavaScript е език за писане на скриптове, докато JAVA  е език за програмиране. Освен съвпадението в част от името, двата езика нямат кой знае какви прилики, дори са разработени от различни корпорации ( JAVA е дело на SUN, a JavaScript е разработка на Netscape). JAVA е мощен език за програмиране не само на интернет приложения, но и на самостоятелни програми за различни платформи. Интернет приложенията на JAVA се наричат аплети. Те са файлове с разширение .class и се вмъкват в HTML документа между таговете < applet > и < /applet >. </p>
+                <p>JavaScript кода се вмъква в HTML документа между двойката елементи < script > и < /script >. Когато срещне тагът < script >, браузъра разбира че трябва да спре интерпретирането на HTML кода и да започне да обработва скрипта, намиращ се между < script > и < /script >. Този скрипт не е задължително да бъде написан на JavaScript. Има и други езици за  писане на скриптове, например VBScript. Затова когато пишете отварящия таг за скрипт, трябва да укажете на браузъра на какъв език ще бъде скрипта. Ако този език е JavaScript трябва да напишете < script language=”javascript” > .Ето един пример на една уеб страница с вмъкнат JavaScript:</p>
+                <p><a href="resources/example1/Example1.html"> Пример 1: (click here)</a></p>
+                <p>< html ><br />
+                    < head ><br />
+ 	                    < title >JavaScript< /title ><br />
+                    < /head ><br />
+                    < body ><br />
+ 	                    < script lang = ”javascript” ><br />
+ 	                        document.write("Здравей!");<br />
+ 	                    < /script ><br />
+                    < /body ><br />
+                    < /html ><br />
+                </p>
+                <p>Изпълнението на кода ще изведе на екрана съобщение: „Здравей!“</p>
+                <p><em>Важно уточнение!</em>
+                JavaScript и Java са два напълно различни езика, когато става въпрос за концепции и дизайн. Java (създаден от Sun) е по-комплексен програмен език, подобен на C. JavaScript  е създаден за 10 дена от Brendan Eich като проект  на Netscape и е front-end скриптов език. Харатеризира се с лекота, може да бъде използван кат обектно-ориентиран език, ембднат в html страницата, интерпретира се от браузъра.
+                </p>
+                <p>
+                <a href="resources/example2/Example2.html">Пример 2:(click here)</a><br />
+                < html ><br />
+                < body ><br />
+	                < script type=”text/javascript” ><br />
+		                alert (‘Hello, I am Martin and this is my first JS program!’);<br />
+	                < /script ><br />
+                < /body ><br />
+                < /html ><br />
+                Ето какво ще видим след изпълнението на кода:<br />
+                                    <img src="img/ex2.png" alt="JS" /><br />
+                От Пример 1 и Пример 2 стана ясно, че командите document.write и alert са сходни и имат сходно предназначение, с тази разлика, че alert изкарва резултата в малко прозорче, а document.write просто отпечатва някакъв текст на екрана.
+                </p>
+                <p><em>Интересен факт: </em>
+                JavaScript  в Windows 8 – Microsoft използва JavaScript за разработка на Windows 8 приложения. Може да се каже, че JavaScript определено е бъдещето за Internet и Windows.
+                </p>
+                <p>Силно препоръчително е, JavaScript кода да е поставен в изцяло отделен файл с разширение .js и така да бъде линкнат (свързан) с html файла. Ето как става това:</p><br />
+                <p>
+                    <a href="resources/example3/Example3.html">Пример 3: (click here)</a><br />
+                < html ><br />
+                < head ><br />
+	                < script src=”Example3.js” type=”text/javascript" ><br />
+		                < !-- Кодът поставен тук няма да бъде изпълнен! -- ><br />
+	                < /script ><br />
+                < head ><br />
+                < body ><br />
+	                < button onclick=”sample()” value=”Call JS function from Example3.js” / ><br />
+                < /body ><br />
+                < /html ><br />
+                </p>
+            <p>Чрез атрибута src, задаваме пътят/името на нашия JavaScript файл и така при отваряне на html файла, ще се изпълни и script.js. Важно е да се спомене, че < script > тага винаги е празен и съответно всички команди пишем в .js файла (подобно на CSS). </p>
+            </section>
+        </article>
+    <p class="goup"><a href="#">Click Here And Fly Up Like A Bird!</a></p>
+    <footer>
+        <div><hr class="footer" />
+            <p>Изготвил: Мартин М. Маринов, СИ, 61534</p>
+        </div>
+    </footer>
+</body>
+</html>
